@@ -1,0 +1,17 @@
+tokenizer:
+  source: ./models/mllama_t
+  pad_to_multiple_of: 8
+models:
+  - model: ./models/mllama_t
+    parameters:
+      weight: 0.2
+  - model: ./models/tulu_t
+    parameters:
+      weight:
+        - filter: lm_head
+          value: 0
+        - value: 0.8
+merge_method: linear
+parameters:
+  normalize: false
+dtype: float32

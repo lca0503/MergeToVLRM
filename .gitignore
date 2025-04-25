@@ -1,0 +1,14 @@
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+__pycache__/
+logs/
+models/
+models_vlseq/
+results/
+test_images/
